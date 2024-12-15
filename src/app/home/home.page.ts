@@ -1,3 +1,4 @@
+
 // import { Component, OnInit } from '@angular/core';
 // import * as L from 'leaflet';
 // import { HttpClient } from '@angular/common/http';
@@ -105,6 +106,8 @@
 //   }
 // }
 
+
+
 import { Component, OnInit } from '@angular/core';
 import * as L from 'leaflet';
 import { HttpClient } from '@angular/common/http';
@@ -138,8 +141,13 @@ export class HomePage implements OnInit {
   }
 
   loadMap() {
+
     // Initialize the map with Yogyakarta
     this.map = L.map('mapId').setView([-7.80411765482930, 110.1792455733677], 11);
+
+    // Initialize the map with coordinates for Yogyakarta
+    this.map = L.map('mapId').setView([-7.804117654829307, 110.17924557336778], 11);
+
 
     // Add the initial tile layer
     this.addTileLayer(this.selectedBasemap);

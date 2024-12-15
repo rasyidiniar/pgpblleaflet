@@ -32,7 +32,11 @@
               }
             ],
             "styles": ["src/global.scss", "src/theme/variables.scss"],
+<<<<<<< HEAD
             "scripts": ["node_modules/leaflet/dist/leaflet.js"]
+=======
+            "scripts": []
+>>>>>>> 71d150ec75ece9e46149215a575d3ba26e8a2000
           },
           "configurations": {
             "production": {
@@ -80,7 +84,11 @@
               "buildTarget": "app:build:development"
             },
             "ci": {
+<<<<<<< HEAD
 
+=======
+              "progress": false
+>>>>>>> 71d150ec75ece9e46149215a575d3ba26e8a2000
             }
           },
           "defaultConfiguration": "development"
