@@ -139,7 +139,7 @@ export class HomePage implements OnInit {
 
   loadMap() {
     // Initialize the map with Yogyakarta
-    this.map = L.map('mapId').setView([-7.804117654829307, 110.1792455733677], 11);
+    this.map = L.map('mapId').setView([-7.80411765482930, 110.1792455733677], 11);
 
     // Add the initial tile layer
     this.addTileLayer(this.selectedBasemap);
