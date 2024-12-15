@@ -182,6 +182,8 @@ export class HomePage implements OnInit {
     });
   }
 
+
+  
   // Add a tile layer to the map
   addTileLayer(basemap: string) {
     // Remove the previous tile layer if it exists
