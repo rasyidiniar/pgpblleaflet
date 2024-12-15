@@ -8,6 +8,7 @@ import * as L from 'leaflet'; //cannot find declaration
 })
 export class HomePage {
 
+  //Deklarasi 3 Variabel
   map!: L.Map;
   markerIcon!: L.Icon;
   layerControl!: L.Control.Layers;
@@ -18,6 +19,7 @@ export class HomePage {
 
   }
 
+  //Inisialisasi Peta
   ionViewDidEnter() {
     this.map = L.map('mapId').setView([-7.770397767812406, 110.38205714193435], 13)
 
@@ -64,6 +66,7 @@ export class HomePage {
 
     L.control.layers(baseMaps).addTo(this.map);
 
+    //Peta OSM Default
     L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
       attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
     }).addTo(this.map);
